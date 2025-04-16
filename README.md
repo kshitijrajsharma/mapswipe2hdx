@@ -43,3 +43,16 @@ projects:
     name: "Myanmar: Building Detection"
 ```
 
+## Install & Run 
+
+Install 
+
+```bash
+uv sync
+```
+
+Run 
+
+```bash
+streamlit run streamlit.py
+```
