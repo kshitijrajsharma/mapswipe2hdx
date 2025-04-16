@@ -1,0 +1,33 @@
+# MapSwipe to HDX Configuration
+
+# HDX Account Settings
+hdx_site: "demo"  # Use "demo" or "prod" for production
+hdx_api_key: "your-api-key-here"  # Your HDX API key
+hdx_owner_org: "your-owner-org-here"  # Your HDX organization ID
+hdx_maintainer: "maintainer-here"  # Your HDX maintainer ID
+
+# Dataset Information
+dataset_name: "MapSwipe Results : Myanmar Suspected Buildings"
+dataset_prefix: "mapswipe_myanmar_buildings"  # Prefix for dataset files, make sure it is unique and short
+dataset_description: "MapSwipe results for suspected buildings in Myanmar. This dataset contains geospatial data collected through the MapSwipe platform, focusing on building identification in disaster-affected areas." ## add more details for this as much as it helps
+dataset_location: "Myanmar"  # Country or region
+dataset_frequency: "As needed"  # Options: daily, weekly, monthly, quarterly, biannually, annually, as_needed
+dataset_tags:
+  - "geodata"
+  - "infrastructure"
+# Output Settings
+file_formats:
+  - "geojson"   # Standard GeoJSON format
+  - "gpkg"      # GeoPackage format 
+  - "kml"       # Google KML format
+
+# MapSwipe Projects to Process
+projects:
+  - project_id: "https://mapswipe.org/en/projects/-OMTfDy03ThqukWPeBVp/"
+    name: "Myanmar: Disaster Response 1"
+  
+  - project_id: "https://mapswipe.org/en/projects/-OMqANF17XQSJaxob4LN/"
+    name: "Myanmar: Disaster Response 2"
+  
+  - project_id: "-OMunaJmhQt4kOIb2gGH" ## Project id is also supported directly
+    name: "Myanmar: Disaster Response 3"

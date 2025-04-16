@@ -1,0 +1,16 @@
+[project]
+name = "mapswipe2hdx"
+version = "0.0.1"
+description = "Combine Multiple MapSwipe Projects & Publish results to HDX"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "geopandas>=1.0.1",
+    "hdx-python-api>=6.3.8",
+    "tqdm>=4.67.1",
+]
+
+[dependency-groups]
+ui = [
+    "streamlit>=1.44.1",
+]
